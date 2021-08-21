@@ -59,25 +59,25 @@
                                     <tbody>
                                         <tr>
                                             <td>Best Price</td>
-                                            <td>$<span>1,299</span></td>
+                                            <td>$<span id="best">1,299</span></td>
                                         </tr>
                                         <tr>
                                             <td>Extra Memory Cost</td>
-                                            <td>$<span id="price">0</span></td>
+                                            <td>$<span id="memory">0</span></td>
                                         </tr>
                                         <tr>
                                             <td>Extra Storage Cost</td>
-                                            <td>$<span id="pricessd">0</td>
+                                            <td>$<span id="storage">0</td>
                                         </tr>
                                         <tr>
                                             <td>DeliVery Charge</td>
-                                            <td>$<span id="cost">0</span></td>
+                                            <td>$<span id="shipping">0</span></td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td>Total price</td>
-                                            <td>$<span>1299</td>
+                                            <td>$<span id="total-price">1299</span></td>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -87,10 +87,10 @@
                                 <div class="row ps-1">
                                     <h6>Add promo Code</h6>
                                     <div class="col">
-                                        <input class="border" type="text" placeholder="">
+                                        <input id="input-value" class="border" type="text" placeholder="">
                                     </div>
                                     <div class="col">
-                                        <button class=" border-0 bg-danger text-white">Apply</button>
+                                        <button id="apply" class=" border-0 bg-danger text-white">Apply</button>
                                     </div>
                                 </div>
                             </div>
@@ -101,8 +101,7 @@
         </section>
         <section class="container">
             <hr>
-            <h3 class="text-center text-danger">Total: $1299</h3>
-
+            <h3 class="text-center text-danger">Total: $<span id="grand-total">1299</span></h3>
         </section>
     </main>
 
