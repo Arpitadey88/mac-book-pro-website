@@ -1,6 +1,6 @@
 const singleMemory = document.getElementById("single-memory");
 singleMemory.addEventListener('click', function () {
-    memory.innerText = "10";
+    memory.innerText = "0";
     updateTotalPrice();
 });
 const doubleMemory = document.getElementById("double-memory");
@@ -11,7 +11,7 @@ doubleMemory.addEventListener('click', function () {
 
 const singleStorage = document.getElementById("single-ssd");
 singleStorage.addEventListener('click', function () {
-    storage.innerText = "10";
+    storage.innerText = "0";
     updateTotalPrice();
 });
 const doubleStorage = document.getElementById("double-ssd");
@@ -27,7 +27,7 @@ tripleStorage.addEventListener('click', function () {
 
 const freeDelivery = document.getElementById("free-delivery");
 freeDelivery.addEventListener('click', function () {
-    shipping.innerText = "10";
+    shipping.innerText = "0";
     updateTotalPrice();
 });
 const urgentDelivery = document.getElementById("urgent-delivery");
@@ -61,6 +61,6 @@ applyPromo.addEventListener('click', function () {
         // console.log('grnad previous', grandTotal)
         const grandTotalPrice = parseInt(updateTotalPrice() - (updateTotalPrice() * 20 / 100));
         document.getElementById("grand-total").innerText = grandTotalPrice;
-        inputField = '';
+        // inputField = '';
     }
 });
