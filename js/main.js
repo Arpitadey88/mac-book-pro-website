@@ -43,6 +43,7 @@ const totalPrice = document.getElementById("total-price");
 const grandTotal = document.getElementById("grand-total");
 const applyPromo = document.getElementById("apply");
 
+// calculation total price
 function updateTotalPrice() {
     const defaultPrice = Number(best.innerText)
     const memoryPrice = Number(memory.innerText);
@@ -56,11 +57,16 @@ function updateTotalPrice() {
 }
 // apply promocode for discount price
 applyPromo.addEventListener('click', function () {
-    let inputField = document.getElementById("input-value").value;
-    if (inputField == 'stevekaku') {
+    let inputField = document.getElementById("input-value");
+    let inputArea = inputField.value;
+    if (inputArea == 'stevekaku') {
         // console.log('grnad previous', grandTotal)
         const grandTotalPrice = parseInt(updateTotalPrice() - (updateTotalPrice() * 20 / 100));
         document.getElementById("grand-total").innerText = grandTotalPrice;
-        // inputField = '';
     }
+    else {
+        alert("Something went wrong!! Try again!!")
+    }
+    // inputField = '';
+    inputField.value = '';
 });
