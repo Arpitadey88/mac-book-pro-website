@@ -67,6 +67,5 @@ applyPromo.addEventListener('click', function () {
     else {
         alert("Something went wrong!! Try again!!")
     }
-    // inputField = '';
     inputField.value = '';
 });
